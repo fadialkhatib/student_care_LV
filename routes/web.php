@@ -18,4 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test-online', function () {
+    dd('i am online ^_^');
+
 Route::get('sendemail',[EmailController::class,'sendEmail'])->name('sendemail');
