@@ -16,12 +16,12 @@ class Blacklist
 {
   public function handle(Request $request, Closure $next)
   {
-    $blacklist = Black_list::where('user_id',auth()->user()->id )->first();
+  /*  $blacklist = Black_list::where('user_id',auth()->user()->id )->first();
       if ($blacklist) {
         auth()->user()->tokens()->delete();
         return response()->json(['message' => 'Your account has been blacklisted.'], Response::HTTP_FORBIDDEN);
     } else {
-
+*/
   return $next($request);
     
     }
