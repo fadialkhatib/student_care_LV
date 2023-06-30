@@ -42,7 +42,7 @@ Route::get('/show_image/{filename}' , [PhotoController::class, 'show_image']);
 
 
                         ######### User Routes  ############
-Route::post('register' , [UserController::class,'Register'])->name('register')->middleware('black');
+Route::post('register' , [UserController::class,'Register'])->name('register');//->middleware('black');
 Route::post('login'    , [UserController::class,'Login'   ])->name( 'login'  )->middleware('black');
 
 
